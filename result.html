@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="result.css">
+</head>
+
+<body>
+    <nav class="nav nav_top">
+        <div class="logo">
+            <a href="{{url_for('home')}}"><img src="images/logo.png" width="120"></a>
+        </div>
+        <div class="nav_side">
+            <a href="{{url_for('about')}}">About Us</a>
+            <!-- <a href="service.html">Services</a> -->
+            <a href="{{url_for('contact_us')}}">Contact</a>
+            <a href="{{url_for('home')}}">LogOut</a>
+            <a href="{{url_for('video')}}">Guided-Videos</a>
+        </div>
+    </nav><br><br><br><br><br><br><br>
+    <div>
+        <h1 style="text-align: center;">YOUR MEAL ANALYSIS</h1>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js">
+
+
+
+
+        </script>
+
+        <canvas id="myChart" style="max-width:1250px;max-block-size: 400px;">
+            <input type="text">
+        </canvas>
+
+
+    </div>
+
+    </script>
+
+    <h2>Your Caloric and Nutritional Requirements:</h2><br>
+
+    <div class="calorie">
+        <div class="cal">
+
+            <fieldset class="cal1" id="Carbohydrates" name="carb" style="width: 50px;">
+                <legend style="color:brown ;"><b>Carbohydrates</b></legend><b>{{carb}} gms</b>
+            </fieldset>
+            <fieldset class="cal2" id="protein" name="protein" style=" width:80px;">
+                <legend style="color: brown;"><b>Proteins</b></legend><b>{{protein}} gms</b>
+            </fieldset>
+
+            <fieldset class="cal3" id="fats" name="fats" style=" width:80px;">
+                <legend style="color: brown;"><b>Fats</b></legend><b>{{fats}} gms</b>
+            </fieldset>
+            <fieldset class="cal4" id="BMI" name="bmi" style=" width:80px;">
+                <legend style="color: brown;"><b>BMI</b></legend><b>{{bmi}}</b>
+            </fieldset><br><br><br><br><br>
+        </div>
+        <div class="rightbox">
+            <fieldset class="cal5" id="Totalcalorie" name="cal" style=" width: 200px;">
+                <legend style="color: brown;"><b> Calorie</b></legend><b>{{cal}} gms</b>
+            </fieldset>
+        </div>
+    </div>
+
+
+
+    <script src="/chart.js"></script>
+    <div class="total_calorie">
+        <h3>TOTAL CALORIES</h3>
+        <div>
+        </div>
+    </div>
+    </div>
+
+    <fieldset class="fieldset">
+        <legend>RECOMMENDATIONS</legend>
+    <div class="vegetarian">
+            <h1>Vegetarian</h1>
+            <h2>Protiens</h2>
+            <div class="food_item1">
+                <img src="images/logo.png" alt="" style="size: 20px;"> <p>Food item1</p>
+            </div>
+        <div class="food_item2">
+            <img src="images/logo.png" alt=""> <p>Food item2</p> <br>
+        </div>
+        <div class="food_item3">
+            <img src="images/logo.png" alt=""> <p>Food item3</p> <br>
+        </div>
+        <div class="food_item4">
+            <img src="images/logo.png" alt=""> <p>Food item4</p> <br>
+        </div>
+    </div>
+    <div class="non_vegetarian">
+        <h1>Non_vegetarian</h1>
+        <h2>Proteins</h2>
+            <div class="food_item1">
+                <img src="images/logo.png" alt=""><p>Food item1</p> <br>
+            </div>
+            <div class="food_item2">
+            <img src="images/logo.png" alt=""> <p>Food item2</p> <br>
+            </div>
+            <div class="food_item3">
+            <img src="images/logo.png" alt=""> <p>Food item3</p> <br>
+            </div>
+            <div class="food_item4">
+            <img src="images/logo.png" alt=""> <p>Food item4</p> <br>
+            </div>
+    </div>
+      
+    </fieldset>
+
+
+</body>
+<script src="/chart.js"></script>
+
+</html>
